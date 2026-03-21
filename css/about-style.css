@@ -1,0 +1,166 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            color: #ededed;
+            background-color: #081b29;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #081b29;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 25px;
+            color: #ededed;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .navbar a {
+            font-size: 18px;
+            color: #ededed;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: .3s;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: #00abf0;
+        }
+
+        .home {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 100px 5% 40px;
+            background: url('../images/Alex-Hermosillo.jpg') no-repeat center center/cover;
+        }
+
+        .home-content h1 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        .home-content h3 {
+            font-size: 28px;
+            color: #00abf0;
+            margin: 10px 0;
+        }
+
+        .home-content p {
+            font-size: 16px;
+            max-width: 600px;
+            margin: 20px 0;
+        }
+
+        .btn-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .btn-box a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 45px;
+            background: #00abf0;
+            color: #081b29;
+            border: 2px solid #00abf0;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-box a:hover {
+            background: transparent;
+            color: #00abf0;
+        }
+
+        .home-sci {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .home-sci a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #00abf0;
+            border-radius: 50%;
+            color: #00abf0;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .home-sci a:hover {
+            background-color: #00abf0;
+            color: #081b29;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .navbar a {
+                margin: 10px 0;
+            }
+
+            .home-content h1 {
+                font-size: 36px;
+            }
+
+            .home-content h3 {
+                font-size: 22px;
+            }
+
+            .home-content p {
+                font-size: 14px;
+            }
+
+            .btn-box {
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+            }
+
+            .btn-box a {
+                width: 90%;
+            }
+        }

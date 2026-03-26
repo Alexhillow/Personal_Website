@@ -30,8 +30,9 @@
             color: #ededed;
             text-decoration: none;
             font-weight: 600;
-        }
+            animation: fadeIn 0.5s ease-in-out;
 
+        }
         .navbar a {
             font-size: 18px;
             color: #ededed;
@@ -39,11 +40,13 @@
             font-weight: 500;
             margin-left: 35px;
             transition: .3s;
+            animation: fadeIn 0.5s ease-in-out;
         }
 
         .navbar a:hover,
         .navbar a.active {
             color: #00abf0;
+            animation: fadeIn 1s ease-in-out;
         }
 
         .home {
@@ -55,6 +58,7 @@
             text-align: center;
             padding: 100px 5% 40px;
             background: url('../images/Alex-Hermosillo.jpg') no-repeat center center/cover;
+            animation: fadeIn 1s ease-in-out;
         }
 
         .home-content h1 {
@@ -163,4 +167,17 @@
             .btn-box a {
                 width: 90%;
             }
+
+           
         }
+
+          @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform:translateX(-20px);
+                }
+                to{
+                    opacity:1;
+                    transform:translateX(0px);
+                }
+            }
